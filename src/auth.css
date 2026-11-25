@@ -1,0 +1,127 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #f4f4f5;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  color: #1a1a1a;
+  padding: 32px 28px 28px;
+  border-radius: 14px;
+  border-top: 5px solid #a4161a;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.auth-logo {
+  display: flex;
+  justify-content: center;
+}
+.auth-logo img {
+  width: 160px;
+  height: 160px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(164, 22, 26, 0.35);
+}
+.auth-logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  color: #a4161a;
+  letter-spacing: 0.5px;
+}
+
+.auth-card h1 {
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.auth-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.auth-card input {
+  padding: 11px 12px;
+  border: 1px solid #d4d4d8;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #fff;
+  color: #1a1a1a;
+}
+.auth-card input:focus {
+  outline: none;
+  border-color: #a4161a;
+  box-shadow: 0 0 0 3px rgba(164, 22, 26, 0.15);
+}
+
+.auth-card button {
+  padding: 12px;
+  border: 0;
+  border-radius: 8px;
+  background: #a4161a;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.auth-card button:hover:not(:disabled) {
+  background: #8a1216;
+}
+.auth-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-error {
+  background: #fdecec;
+  color: #a4161a;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.field-error {
+  color: #a4161a;
+  font-size: 13px;
+  font-weight: 400;
+}
+.auth-note {
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.auth-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+  color: #52525b;
+}
+.auth-links.center {
+  justify-content: center;
+}
+.auth-links a {
+  color: #a4161a;
+  text-decoration: none;
+  font-weight: 500;
+}
+.auth-links a:hover {
+  text-decoration: underline;
+}

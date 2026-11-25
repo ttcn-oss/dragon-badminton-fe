@@ -1,0 +1,81 @@
+.dash {
+  min-height: 100vh;
+  display: flex;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f4f4f5;
+  color: #1a1a1a;
+}
+
+.dash-side {
+  width: 240px;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.dash-logo {
+  margin-bottom: 16px;
+}
+
+.dash-logo .auth-logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.dash-item {
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #e4e4e7;
+  cursor: pointer;
+}
+
+.dash-item:hover,
+.dash-item--active {
+  background: #a4161a;
+  color: #fff;
+}
+
+.dash-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background: #fff;
+  border-bottom: 3px solid #a4161a;
+}
+
+.dash-header button {
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #a4161a;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dash-body {
+  padding: 24px;
+}
+
+.dash-body h1 {
+  margin-top: 0;
+  color: #a4161a;
+}
+
+@media (max-width: 700px) {
+  .dash {
+    flex-direction: column;
+  }
+
+  .dash-side {
+    width: auto;
+  }
+}
